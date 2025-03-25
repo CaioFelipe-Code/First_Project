@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="container">
+        <header>
+            <h1>Jogo de Adivinhação</h1>
+            <nav>
+                <a href='index.html'>jogo</a>
+                <a href='documentacao.html'>Documentação</a></button>
+            </nav>
+        </header>
+        <main>
+            <section id="instructions">
+                <h2>Instruções</h2>
+                <p>Tente adivinhar o número entre 1 e 100.</p>
+                <button id="start-button">Começar Jogo</button>
+            </section>
+            <section id="game-area" style="display: none;">
+                <p>Número de tentativas: <span id="attempts">0</span></p>
+                <label for="guess">Digite seu palpite:</label>
+                <input type="number" id="guess" placeholder="Digite seu palpite">
+                <button id="guess-button">Enviar Palpite</button>
+                <p id="message"></p>
+                <p>Histórico de palpites: <span id="guess-history"></span></p>
+            </section>
+            <section id="result" style="display: none;">
+                <h2 id="result-title"></h2>
+                <p id="result-message"></p>
+                <button id="restart-button">Jogar Novamente</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Jogo de Adivinhação</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

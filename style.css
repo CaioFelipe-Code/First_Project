@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('imagem1.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    transition: background-image 0.5s ease;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: rgba(247, 237, 217, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(236, 212, 146);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgb(236, 212, 146);
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b49300;
+}
+
+nav a {
+    padding: 10px 20px;
+    background-color: #f3d697;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 0 5px rgb(0.0, 0.0, 1.0);
+}
+
+nav a:hover {
+    background-color: #e2c20c;
+    transform: scale(1.05);
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#instructions, #game-area, #result {
+    text-align: center;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 80px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f3d697;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 5px rgb(0.0, 0.0, 1.0);
+}
+
+button:hover {
+    background-color: #e2c20c;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #d4d105;
+    transform: scale(0.95);
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #b49300;
+    font-size: 0.8em;
+    color: #666;
+    transition: color 0.3s ease-in-out;
+}
+
+footer:hover {
+    color: #333;
+}
